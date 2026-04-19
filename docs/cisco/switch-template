@@ -2,6 +2,10 @@ conf t
 ! prevent access to configuration if someone has physical access
 no service password recovery
 !
+! set up aaa to use local logins
+aaa new-model
+aaa authentication login default local
+!
 ! disable Vlan1
 int vlan1
 shut
