@@ -1,0 +1,3 @@
+! prevent access to configuration if someone has physical access
+no service password recovery
+!
