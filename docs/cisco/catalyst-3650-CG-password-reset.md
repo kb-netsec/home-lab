@@ -1,4 +1,4 @@
-Yanno that awkward moment where you lock yourself out of a network device because you forgot the password you set when labbing? Yeah. 
+You're a responsible Network Engineer. You don't lock yourself out of devices. Ever. Not even lab devices. In those odd situations when Ivan your unpaid lab assistant randomly changes a password though, this may come in handy. 
 
 To recover the password:
 Attach a terminal or PC with terminal emulation (for example, Hyper Terminal) to the console port of the switch.
