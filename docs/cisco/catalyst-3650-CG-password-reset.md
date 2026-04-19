@@ -14,3 +14,10 @@ For 2900XL, 3500XL, 2940, 2950, 2960, 2970, 3550, 3560, and 3750 series switches
 Hold down the mode button located on the left side of the front panel, while you reconnect the power cable to the switch.
 
 Release the Mode button after approximately 15 seconds when the SYST LED turns solid green. When you release the Mode button, the SYST LED blinks green.
+
+If you're on a Linux box:
+
+```
+sudo screen /dev/ttyUSB0
+```
+
