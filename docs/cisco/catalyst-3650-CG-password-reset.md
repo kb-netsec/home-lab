@@ -1,4 +1,4 @@
-You're a responsible Network Engineer. You don't lock yourself out of devices. Ever. Not even lab devices. In those odd situations when Ivan your unpaid lab assistant randomly changes a password though, this may come in handy. 
+You're a responsible Network Engineer. You don't lock yourself out of devices. Ever. Not even lab devices. In those one-off situations when Ivan your unpaid lab assistant randomly changes a password though, this may come in handy. 
 
 To recover the password:
 Attach a terminal or PC with terminal emulation (for example, Hyper Terminal) to the console port of the switch.
