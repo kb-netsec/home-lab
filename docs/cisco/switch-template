@@ -1,3 +1,9 @@
+conf t
 ! prevent access to configuration if someone has physical access
 no service password recovery
+!
+! disable Vlan1
+int vlan1
+shut
+exit
 !
