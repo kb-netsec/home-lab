@@ -3,13 +3,13 @@ Welcome to my homelab! 🧑‍🔬 This repo contains the documentation, topolog
 
 Current stack:
 
-* Switching: 3x Cisco 3750X  
-* Virtualization: Docker + lightweight containers 
-* Wireless: Microtik RB951Ui-2HnD
-* Firewall: TBD (mini PC + OPNsense) 
+* Switching: 3x Cisco 3750X, 1x Catalyst 3560-CG
+* Virtualization: Docker + lightweight containers, Containerlab, GNS3
+* Wireless/Firewall Microtik hAP AX3
+
 
 Goals
 
 * Prep for CCNA
 * Learn networking + security concepts
-* Self-host and secure network services
+* Self-host and secure network devices and services
