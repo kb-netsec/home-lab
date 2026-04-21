@@ -15,3 +15,16 @@ $ cp /mnt/CML/virl-base-images/iol-xe-17-16-01a/x86_64_crb_linux-adventerprisek9
 
 
 Create docker containers from iol images
+
+```
+sudo make docker-image
+```
+
+Verify docker images 
+
+```
+sudo docker images
+```
+
+NOTE! When creating iol l2 images, the format is very picky. It needs to follow the convention in the README file exactly or it will revert to the base debian image. 
+
