@@ -4,7 +4,7 @@ Download CML free refplat
 
 Unzip and mount the .iso
 
-Clone vrnetlab. The srl-labs fork, not the upstream (https://github.com/srl-labs/vrnetlab.git)
+Clone vrnetlab. The srl-labs fork, not the upstream. It took me way too long to find out the upstream didn't have a Cisco directory. (https://github.com/srl-labs/vrnetlab.git)
 
 Copy iol binaries to vrnetlab/cisco/iol 
 
