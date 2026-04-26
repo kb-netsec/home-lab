@@ -7,4 +7,4 @@ topology:
       kind: cisco_iol
       image: vrnetlab/cisco_iol:L2-17.16.01
   links:
-    - endpoints:
+  
