@@ -3,12 +3,8 @@ name: single-cisco-l2
 
 topology:
   nodes:
-    srl:
-      kind: nokia_srlinux
-      image: ghcr.io/nokia/srlinux
-    ceos:
-      kind: arista_ceos
-      image: ceos:4.32.0F
-
+    iol:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:L2-17.16.01
   links:
-    - endpoints: ["srl:e1-1", "ceos:eth1"]
+    - endpoints:
