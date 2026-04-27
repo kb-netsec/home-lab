@@ -1,7 +1,7 @@
 In this lab, I'm practicing locking down device access with ACLs by intentionally locking myself out of a Cisco IOL L2 
-node by blocking access on the containerlab management network
+node by blocking access on the containerlab management network.
 
-[host] <---> [clab mgmt] <---> [iol]
+[host 172.20.20.0/24] <---> [clab mgmt] <---> [iol 172.20.20.2]
 
 conf t
 ip access-list LOCKOUT
