@@ -14,6 +14,6 @@ The immediate result is nothing. I am still able to access the command line. I s
 This was not the case. After closing out my SSH session and attempting again, we can see the ACL is effective:
 
 ```
-$ ssh admin@172.20.20.2
+ssh admin@172.20.20.2
 ssh: connect to host 172.20.20.2 port 22: Connection refused
 ```
