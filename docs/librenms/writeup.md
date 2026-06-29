@@ -26,9 +26,9 @@ Then to "Set a new mysql password in .env and inspect compose.yml"
 
 Uhhh what? How do I set a password in .env? What even does "inspect compose.yml" mean? Inspect it for what? 
 
-At this point, I'm already reaching for a YT tutorial for noobs. I found one by for day in life: that explained the dependencies pretty well.
+At this point, I'm already reaching for a YT tutorial for noobs. I found one by for day in life: that explained the dependencies, .env and .yml files pretty well. Answer to how to set the password at 4:14. https://youtu.be/tQ2pZkk4Fsw
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tQ2pZkk4Fsw?si=_tc2Sykntvbk0ef7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 
 
