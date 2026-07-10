@@ -1,16 +1,29 @@
 This was a bit of a pain, but in a nutshell:
 
-Download CML free refplat
+Download CML free refplat to your machine.
 
-Unzip and mount the .iso
+Unzip and mount the .iso 
+
+```
+unzip refplat-20260409-free-iso.zip
+
+sudo mkdir /mnt/cml
+cd /mtn/cml
+
+sudo mount -o loop refplat-20260409-free.iso /mnt/cml
+```
 
 Clone vrnetlab. The srl-labs fork, not the upstream. It took me way too long to find out the upstream didn't have a Cisco directory. See containerlab documentation here https://containerlab.dev/manual/vrnetlab/#vrnetlab (https://github.com/srl-labs/vrnetlab.git)
+
+```
+git clone https://github.com/srl-labs/vrnetlab.git
+```
 
 Copy iol binaries to vrnetlab/cisco/iol 
 
 ```
-$ cp /mnt/CML/virl-base-images/ioll2-xe-17-16-01a/x86_64_crb_linux_l2-adventerprisek9-ms.iol ~/vrnetlab/cisco/iol/
-$ cp /mnt/CML/virl-base-images/iol-xe-17-16-01a/x86_64_crb_linux-adventerprisek9-ms.iol ~/vrnetlab/cisco/iol/
+$ cp /mnt/cml/virl-base-images/ioll2-xe-17-16-01a/x86_64_crb_linux_l2-adventerprisek9-ms.iol ~/vrnetlab/cisco/iol/
+$ cp /mnt/cml/virl-base-images/iol-xe-17-16-01a/x86_64_crb_linux-adventerprisek9-ms.iol ~/vrnetlab/cisco/iol/
 ```
 
 
