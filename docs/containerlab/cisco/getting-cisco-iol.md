@@ -19,11 +19,25 @@ Clone vrnetlab. The srl-labs fork, not the upstream. It took me way too long to 
 git clone https://github.com/srl-labs/vrnetlab.git
 ```
 
-Copy iol binaries to vrnetlab/cisco/iol 7/9/2026 UPDATE: According to AI slop, Staring with (CML) 2.10, the Cisco IOS on Linux (IOL) images are no longer provided as standalone .iol files in the reference platform (refplat) ISO. Instead, they are packaged as docker devices within a compressed archive (e.g., iol-xe-17-18-02.tar.gz) containing blob files with SHA256 hash names
+Copy iol binaries to vrnetlab/cisco/iol 7/9/2026 UPDATE: TL;DR, this is now a big pain in the neck. According to AI slop, Staring with (CML) 2.10, the Cisco IOS on Linux (IOL) images are no longer provided as standalone .iol files in the reference platform (refplat) ISO. Instead, they are packaged as docker devices within a compressed archive (e.g., iol-xe-17-18-02.tar.gz) containing blob files with SHA256 hash names
 
 To extract the usable IOL binary for use in emulators like GNS3 or Containerlab, you must perform the following steps:
 
-Extract the tar.gz archive from the ISO to a temporary directory. 
+Extract the tar.gz archive from the ISO to a temporary directory. You can't extract them to the mount point as it's read only. (Ask me how I know.)
+
+```
+# 1. Create a working directory in your home folder
+mkdir -p ~/cml_extract
+cd ~/cml_extract
+
+# 2. Copy the archive from the ISO to your local directory
+cp /mnt/CML/virl-base-images/iol-xe-17-18-02/iol-xe-17-18-02.tar.gz .
+
+# 3. Extract the outer tar.gz archive (this creates the 'blobs' folder)
+# Use -z for gzip, -x for extract, -v for verbose, -f for file
+tar -xzvf iol-xe-17-18-02.tar.gz
+```
+
 Navigate to the blobs directory (blobs/sha256/) and identify the largest file (typically ~287MB). 
 Extract the inner POSIX tar archive from that specific blob file.
 Locate the .iol binary (e.g., x86_64_crb_linux-adventerprisek9-ms.iol) within the extracted contents. 
