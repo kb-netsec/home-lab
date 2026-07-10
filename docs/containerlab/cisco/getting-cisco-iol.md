@@ -55,7 +55,7 @@ Extract the inner POSIX tar archive from that specific blob file.
 ```
 # Extract the specific .iol file directly from the blob
 # Replace <hash_file> with the actual filename (e.g., ac697212...)
-# Replace <iol_filename> with the target binary name found in step 1
+# Replace <iol_filename> with the target binary name. Find this with tar-tf <hash_file>
 tar -xf <hash_file> <iol_filename>
 ```
 
