@@ -39,7 +39,26 @@ tar -xzvf iol-xe-17-18-02.tar.gz
 ```
 
 Navigate to the blobs directory (blobs/sha256/) and identify the largest file (typically ~287MB). 
+
+```
+# List files and sort by size to find the largest blob (usually the OS image)
+ls -lhS
+
+# Verify the file type (it should say "POSIX tar archive")
+file <largest_file_hash>
+# Example output: ac697212...: POSIX tar archive   
+```
+
+
 Extract the inner POSIX tar archive from that specific blob file.
+
+```
+# Extract the specific .iol file directly from the blob
+# Replace <hash_file> with the actual filename (e.g., ac697212...)
+# Replace <iol_filename> with the target binary name found in step 1
+tar -xf <hash_file> <iol_filename>
+```
+
 Locate the .iol binary (e.g., x86_64_crb_linux-adventerprisek9-ms.iol) within the extracted contents. 
 For Containerlab users, you can automate this process using tools like refplatinator or by manually cloning the srl-labs/vrnetlab repository, copying the extracted .iol file into the vrnetlab/cisco/iol directory, and running make docker-image
 
