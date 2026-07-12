@@ -59,12 +59,12 @@ Extract the inner POSIX tar archive from that specific blob file.
 tar -xf <hash_file> <iol_filename>
 ```
 
-Locate the .iol binary (e.g., x86_64_crb_linux-adventerprisek9-ms.iol) within the extracted contents. 
+Locate the .iol binary (eg., x86_64_crb_linux-adventerprisek9-ms.iol) within the extracted contents. 
 For Containerlab users, you can automate this process using tools like refplatinator or by manually cloning the srl-labs/vrnetlab repository, copying the extracted .iol file into the vrnetlab/cisco/iol directory, and running make docker-image
 
 ```
-cp /mnt/cml/virl-base-images/ioll2-xe-17-16-01a/x86_64_crb_linux_l2-adventerprisek9-ms.iol ~/vrnetlab/cisco/iol/
-cp /mnt/cml/virl-base-images/iol-xe-17-16-01a/x86_64_crb_linux-adventerprisek9-ms.iol ~/vrnetlab/cisco/iol/
+cp ~/cml_extract/ioll2-xe-17-18-02/blobs/sha256/x86_64_crb_linux_l2-adventerprisek9-ms.iol ~/vrnetlab/cisco/iol/
+cp ~/cml_extract/ ~/vrnetlab/cisco/iol/
 ```
 
 
