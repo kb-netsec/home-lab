@@ -19,7 +19,7 @@ Clone vrnetlab. The srl-labs fork, not the upstream. It took me way too long to 
 git clone https://github.com/srl-labs/vrnetlab.git
 ```
 
-Copy iol binaries to vrnetlab/cisco/iol 7/9/2026 UPDATE: TL;DR, this is now a big pain in the neck. According to AI slop, Staring with (CML) 2.10, the Cisco IOS on Linux (IOL) images are no longer provided as standalone .iol files in the reference platform (refplat) ISO. Instead, they are packaged as docker devices within a compressed archive (e.g., iol-xe-17-18-02.tar.gz) containing blob files with SHA256 hash names
+Copy iol binaries to vrnetlab/cisco/iol 7/9/2026 UPDATE: TL;DR, this is now a big pain in the neck. As mentioned later, there are tools to assist with this which I'll have to look into. According to AI slop, Staring with CML 2.10, the Cisco IOS on Linux (IOL) images are no longer provided as standalone .iol files in the reference platform (refplat) ISO. Instead, they are packaged as docker devices within a compressed archive (e.g., iol-xe-17-18-02.tar.gz) containing blob files with SHA256 hash names
 
 To extract the usable IOL binary for use in emulators like GNS3 or Containerlab, you must perform the following steps:
 
@@ -67,8 +67,15 @@ cp ~/cml_extract/ioll2-xe-17-18-02/blobs/sha256/x86_64_crb_linux_l2-adventerpris
 cp ~/cml_extract/ ~/vrnetlab/cisco/iol/
 ```
 
+Ok, we're getting there now. Next step according to the README located at ~/vrnetlab/cisco/iol, we need to rename the binaries. 
 
-Create docker containers from iol images
+```
+mv x86_64_crb_linux_l2-adventerprisek9-ms.iol cisco_iol-L2-17.18.02.bin
+mv x86_64_crb_linux-adventerprisek9-ms.iol cisco_iol-17.18.02.bin
+
+```
+
+From the same README above, create docker containers from iol images.
 
 ```
 sudo make docker-image
