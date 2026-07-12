@@ -1,4 +1,9 @@
 Start a lab 
+containerlab deploy -t <path>
 
-containerlab deploy --topo <path>
+Stop a lab
+containerlab destroy -t <path>
+
+See what labs are running 
+containerlab inspect
 
