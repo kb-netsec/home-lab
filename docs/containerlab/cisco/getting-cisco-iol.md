@@ -31,7 +31,7 @@ mkdir -p ~/cml_extract
 cd ~/cml_extract
 
 # 2. Copy the archive from the ISO to your local directory
-cp /mnt/CML/virl-base-images/iol-xe-17-18-02/iol-xe-17-18-02.tar.gz .
+cp /mnt/cml/virl-base-images/iol-xe-17-18-02/iol-xe-17-18-02.tar.gz .
 
 # 3. Extract the outer tar.gz archive (this creates the 'blobs' folder)
 # Use -z for gzip, -x for extract, -v for verbose, -f for file
