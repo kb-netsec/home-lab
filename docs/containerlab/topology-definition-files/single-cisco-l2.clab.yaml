@@ -5,5 +5,5 @@ topology:
   nodes:
     iol:
       kind: cisco_iol
-      image: vrnetlab/cisco_iol:L2-17.16.01
+      image: vrnetlab/cisco_iol:L2-17.18.02
       type: L2
