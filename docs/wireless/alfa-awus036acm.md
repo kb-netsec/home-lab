@@ -74,7 +74,34 @@ $ip a
        valid_lft forever preferred_lft forever
 ```
 
-Nope. 
+Nope. Unplug. Plug back in.
+
+```
+$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether dc:4a:3e:9a:26:13 brd ff:ff:ff:ff:ff:ff
+    altname enp0s31f6
+    altname enxdc4a3e9a2613
+    inet 192.168.88.243/24 brd 192.168.88.255 scope global dynamic noprefixroute eno1
+       valid_lft 1305sec preferred_lft 1305sec
+    inet6 fe80::de4a:3eff:fe9a:2613/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:16:bb:64:a5:4e brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+39: wlx00c0cabd04d7: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+    link/ether da:15:b3:2d:4e:9e brd ff:ff:ff:ff:ff:ff permaddr 00:c0:ca:bd:04:d7
+```
+
+
+Eyyy 
 
 
 
