@@ -13,8 +13,14 @@ Went to the Linux support page which had an adorable support table. I've added m
 
 | OS     | Status     | Is it good?
 | -------| ---------- | ------------- |
-| Cell 1        | Cell 2        |
-| Cell 3        | Cell 4        |
+| Kali 2022.2       | Cell 2        |
+| Kali 2021.3       | Cell 4        |
+| Ubuntu 22.04 | Works out-of-the-box | Good |
+| Ubuntu 20.10
+| Debian 11.0.3
+| Debian 10.7.0
+| Raspberry Pi OS (32-bit) (rev 2020-08-20)
+| Raspberry Pi OS (32-bit) (rev 2022-04-04)
 
 Support status:
 
