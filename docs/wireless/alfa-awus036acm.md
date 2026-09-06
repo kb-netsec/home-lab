@@ -100,8 +100,7 @@ $ ip a
     link/ether da:15:b3:2d:4e:9e brd ff:ff:ff:ff:ff:ff permaddr 00:c0:ca:bd:04:d7
 ```
 
-
-Eyyy 
+Cool. I can now see the Wi-Fi option in the GNOME settings menu. 
 
 
 
